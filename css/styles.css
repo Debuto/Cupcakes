@@ -9,7 +9,23 @@ body {
   background-color: bisque
 }
 
+li{
+}
+
 .flashy {
   color: red;
   font-style: italic;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-item {
+  width: 50%;
+}
+
+.ingredients-list {
+  list-style: none;
 }
