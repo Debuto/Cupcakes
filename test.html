@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body id="biggerBtn"; id="smallerBtn">
 
 <h2>JavaScript addEventListener()</h2>
 
 <p>This example uses the addEventListener() method to attach a click event to a button.</p>
 
 <button id="myBtn">Try it</button>
+<button type="button" onclick="myFunction()">Bigger Better</button>
+<button type="button" onclick="myFunction()">Itty Bitty</button>
 
 <script>
-document.getElementById("myBtn").addEventListener("click", function() {
-  alert("Hello World!");
+
+document.getElementById("myBtn").addEventListener("click", function keyDown() { 
+  document.body.style.backgroundColor = 'black';
+  document.body.style.color = 'white'; 
 });
+
+document.getElementById("myBtn").addEventListener("dblclick", function keyDown() { 
+  document.body.style.backgroundColor = 'white';
+  document.body.style.color = 'black'; 
+});
+
+document.getElementById("myBtn").addEventListener("dblclick", function keyDown() { 
+  document.body.style.backgroundColor = 'white';
+  document.body.style.color = 'black'; 
+});
+
+document.getElementById("biggerBtn").addEventListener("click", function keyDown() { 
+  document.body.style.fontSize = "x-large"; 
+});
+
+document.getElementById("smallerBtn").addEventListener("click", function keyDown() { 
+  document.body.style.fontSize = 50px; 
+});
+
 </script>
 
 </body>
